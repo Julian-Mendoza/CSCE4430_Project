@@ -1,0 +1,14 @@
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\Pages\LoginPage.xaml.g.cs
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\FitnessApp_CSCE4430.AssemblyInfoInputs.cache
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\FitnessApp_CSCE4430.AssemblyInfo.cs
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\FitnessApp_CSCE4430.dll
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\ref\FitnessApp_CSCE4430.dll
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\FitnessApp_CSCE4430.pdb
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\bin\Debug\netstandard2.0\FitnessApp_CSCE4430.deps.json
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\bin\Debug\netstandard2.0\FitnessApp_CSCE4430.dll
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\bin\Debug\netstandard2.0\ref\FitnessApp_CSCE4430.dll
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\bin\Debug\netstandard2.0\FitnessApp_CSCE4430.pdb
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\FitnessApp_CSCE4430.csprojAssemblyReference.cache
+C:\Users\Julian\source\repos\FitnessApp_CSCE4430\FitnessApp_CSCE4430\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs

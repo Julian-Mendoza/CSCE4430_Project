@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitnessApp_CSCE4430.Pages.LoginPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#31363B">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Entry x:Name="UserEntry" IsPassword="False" Placeholder="Username"
+                   TextColor="White" PlaceholderColor="White"
+                   HorizontalTextAlignment="Center"  VerticalTextAlignment="End"
+                   Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+                   PropertyChanged="UserEntry_PropertyChanged"/>
+            <Entry x:Name="PasswordEntry" IsPassword="True" Placeholder="Password"
+                   TextColor="White" PlaceholderColor="White"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="End"
+                   Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3"
+                   PropertyChanged="PasswordEntry_PropertyChanged"/>
+            <Button x:Name="LoginButton" Text="Login" Clicked="LoginButton_Clicked" 
+                    BackgroundColor="#48A3EF" TextColor="Black" IsEnabled="False"
+                    Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

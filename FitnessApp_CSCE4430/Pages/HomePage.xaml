@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitnessApp_CSCE4430.Pages.HomePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--#region User Input--> 
+            <Label Text="Weight" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+            <Entry x:Name="WeightEnty" Placeholder="Pounds" Keyboard="Numeric"
+                   Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"
+                   PropertyChanging="WeightEnty_PropertyChanging"/>
+            
+            <Label Text="Height" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+            <Entry x:Name="HeightEnty" Placeholder="Inches" Keyboard="Numeric"
+                   Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
+                   PropertyChanging="HeightEnty_PropertyChanging"/>
+
+            <Label Text="Waist" Grid.Row="3" Grid.Column="1" VerticalTextAlignment="Center"/>
+            <Entry x:Name="WaistEnty" Placeholder="Inches" Keyboard="Numeric" 
+                   Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+                   PropertyChanging="WaistEnty_PropertyChanging"/>
+
+            <Label Text="Neck" Grid.Row="4" Grid.Column="1" VerticalTextAlignment="Center"/>
+            <Entry x:Name="NeckEnty" Placeholder="Inches" Keyboard="Numeric" 
+                   Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"
+                   PropertyChanging="NeckEnty_PropertyChanging"/>
+            <!--#endregion-->
+            
+            <!--#region Output-->
+            <Label x:Name="BodyFatLabel" Text="Body Fat" Grid.Row="6" Grid.Column="1"/>
+            <Label x:Name="BMILabel" Text="BMI" Grid.Row="6" Grid.Column="3"/>
+            <Label x:Name="FatMassLabel" Text="Fat Mass" Grid.Row="7" Grid.Column="1"/>
+            <Label x:Name="LoseGainLabel" Text="Lose Fat" Grid.Row="7" Grid.Column="3"/>
+            <Label x:Name="LeanMassLabel" Text="Lean Mass" Grid.Row="8" Grid.Column="1"/>
+            <Label x:Name="BMRLabel" Text="BMR" Grid.Row="8" Grid.Column="3"/>
+            <Label x:Name="GoalWeightLabel" Text="Goal Weight" Grid.Row="9" Grid.Column="2"/>
+            
+            <!--#endregion-->
+
+            <Button x:Name="EnterButton" Text="Enter" Clicked="EnterButton_Clicked" IsEnabled="False"
+                    Grid.Row="11"  Grid.Column="2" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
