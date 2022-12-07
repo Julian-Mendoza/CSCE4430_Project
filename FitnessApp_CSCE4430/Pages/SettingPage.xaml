@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.SettingPage">
+    <ContentPage.Content>
+        <StackLayout Background="Blue"
+                     VerticalOptions="CenterAndExpand"
+                     Margin="15"
+                     
+                     <Entry x:Name="User"
+                            Placeholder="User Name: "
+                            Keyboard="Default"/>
+            
+            
+                     <Entry x:Name="Password"
+                            Placeholder="Password: "
+                            Keyboard="Default"
+                            IsPassword="True"/>
+
+                     <Button x:Name="Goal_Button"
+                              Background="Pink"
+                              TextColor="White"
+                              Clicked="Goal_Button_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
