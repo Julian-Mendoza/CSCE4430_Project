@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:local="clr-namespace:SignUp.ViewModels" 
+             xmlns:mtrl="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             mtrl:MaterialNavigationPage.AppBarColor="#34515E" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextFontFamily="Roboto" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextFontSize="14" 
+             mtrl:MaterialNavigationPage.StatusBarColor="#1B3147" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
+             Title="Fitness | Sign Up"
+             x:Class="SignUp.Views.RegistrationPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="SignUp"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Firstname.Error}"
+                                HasError="{Binding Firstname.HasErrors}"
+                                InputType="Text"
+                                MaxLength="12"
+                                Placeholder="Enter Firstname"
+                                Text="{Binding Firstname.Value,Mode=TwoWay}" 
+                                Unfocused="FirstnameOutFocus"
+                                Focused="FirstnameOutFocus"
+                                TextChanged="FirstnameOutFocus"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Lastname.Error}"
+                                HasError="{Binding Lastname.HasErrors}"
+                                InputType="Text"
+                                MaxLength="12"
+                                Placeholder="Enter Lastname"
+                                Text="{Binding Lastname.Value,Mode=TwoWay}" 
+                                Unfocused="LastnameOutFocus"
+                                Focused="LastnameOutFocus"
+                                TextChanged="LastnameOutFocus"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Password.Error}"
+                                HasError="{Binding Password.HasErrors}"
+                                HelperText="Password must be 8 charecters"
+                                InputType="Password"
+                                Placeholder="Enter Password"
+                                MaxLength="8"
+                                Text="{Binding Password.Value,Mode=TwoWay}"  
+                                Unfocused="PasswordOutFocus"
+                                Focused="PasswordOutFocus"
+                                TextChanged="PasswordOutFocus"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Email.Error}"
+                                HasError="{Binding Email.HasErrors}"
+                                InputType="Email"
+                                Placeholder="Enter Email"
+                                Text="{Binding Email.Value,Mode=TwoWay}"
+                                Unfocused="EmailOutFocus"
+                                Focused="EmailOutFocus"
+                                TextChanged="EmailOutFocus"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding PhoneNo.Error}"
+                                HasError="{Binding PhoneNo.HasErrors}"
+                                InputType="Numeric"
+                                MaxLength="10"
+                                Placeholder="Enter Phone Number"
+                                Text="{Binding PhoneNo.Value,Mode=TwoWay}" 
+                                Unfocused="PhoneNoOutFocus"
+                                Focused="PhoneNoOutFocus" 
+                                TextChanged="PhoneNoOutFocus"/>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="5">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Age.Error}"
+                                HasError="{Binding Age.HasErrors}"
+                                InputType="Numeric"
+                                MaxLength="2"
+                                Placeholder="Enter Age"
+                                Text="{Binding Age.Value,Mode=TwoWay}" 
+                                Unfocused="AgeOutFocus"
+                                Focused="AgeOutFocus" 
+                                TextChanged="AgeOutFocus"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="6">
+                        <mtrl:MaterialTextField
+                                ErrorText="{Binding Gender.Error}"
+                                HasError="{Binding Gender.HasErrors}"
+                                InputType="Text"
+                                MaxLength="1"
+                                Placeholder="Enter Gender"
+                                Text="{Binding Gender.Value,Mode=TwoWay}" 
+                                Unfocused="GenderOutFocus"
+                                Focused="GenderOutFocus" 
+                                TextChanged="GenderOutFocus"
+                        />
+                    </StackLayout>
+                    <StackLayout Grid.Row="7">
+                        <mtrl:MaterialButton 
+                        BackgroundColor="#607D8B"
+                        TextColor="#FFFFFF"
+                        HorizontalOptions="Center" 
+                        Text="Continue" 
+                        VerticalOptions="Center"
+                        Clicked="Button_Clicked"/>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+      
+    </ContentPage.Content>
+</ContentPage>

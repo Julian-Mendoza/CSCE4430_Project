@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:local="clr-namespace:SignUp.Views" 
+             xmlns:mtrl="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material" 
+             mtrl:MaterialNavigationPage.AppBarColor="#2c3e50" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextFontFamily="Roboto" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextFontSize="14" 
+             mtrl:MaterialNavigationPage.StatusBarColor="#1B3147" 
+             mtrl:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
+             Title="Fitness | Measurements"
+             x:Class="SignUp.Views.Measurements">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Measurements"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <mtrl:MaterialTextField
+                                ErrorText="{Binding Height.Error}"
+                                HasError="{Binding Height.HasErrors}"
+                                InputType="Numeric"
+                                HelperText="Your height in inchs"
+                                MaxLength="3"
+                                Placeholder="Height"
+                                Text="{Binding Height.Value,Mode=TwoWay}" 
+                                Unfocused="HeightOutFocus"
+                                Focused="HeightOutFocus"
+                                TextChanged="HeightOutFocus"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <mtrl:MaterialTextField
+                                ErrorText="{Binding Weight.Error}"
+                                HasError="{Binding Weight.HasErrors}"
+                                HelperText="Your weight in lbs"
+                                InputType="Numeric"
+                                Placeholder="Weight"
+                                MaxLength="3"
+                                Text="{Binding Weight.Value,Mode=TwoWay}"  
+                                Unfocused="WeightOutFocus"
+                                Focused="WeightOutFocus"
+                                TextChanged="WeightOutFocus"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <mtrl:MaterialTextField
+                                ErrorText="{Binding Hip.Error}"
+                                HasError="{Binding Hip.HasErrors}"
+                                HelperText="Your Hip measurements in cms"
+                                InputType="Numeric"
+                                MaxLength="3"
+                                Placeholder="Hip"
+                                Text="{Binding Hip.Value,Mode=TwoWay}"
+                                Unfocused="HipOutFocus"
+                                Focused="HipOutFocus"
+                                TextChanged="HipOutFocus"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3">
+                    <mtrl:MaterialTextField
+                                ErrorText="{Binding Neck.Error}"
+                                HasError="{Binding Neck.HasErrors}"
+                                HelperText="Your Neck measurements in cms"
+                                InputType="Numeric"
+                                MaxLength="3"
+                                Placeholder="Neck"
+                                Text="{Binding Neck.Value,Mode=TwoWay}" 
+                                Unfocused="NeckOutFocus"
+                                Focused="NeckOutFocus"
+                                TextChanged="NeckOutFocus"/>
+
+                </StackLayout>
+                <StackLayout Grid.Row="4">
+                    <mtrl:MaterialTextField
+                                ErrorText="{Binding Waist.Error}"
+                                HasError="{Binding Waist.HasErrors}"
+                                HelperText="Your Waist measurements in cms"
+                                InputType="Numeric"
+                                MaxLength="3"
+                                Placeholder="Waist"
+                                Text="{Binding Waist.Value,Mode=TwoWay}" 
+                                Unfocused="WaistOutFocus"
+                                Focused="WaistOutFocus"
+                                TextChanged="WaistOutFocus"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5">
+                    <mtrl:MaterialButton 
+                        BackgroundColor="#EAEAEA" 
+                        HorizontalOptions="Center" 
+                        Text="Last Step, Set Goals!" 
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                        IsEnabled="{Binding enableBtn}"
+                        Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
