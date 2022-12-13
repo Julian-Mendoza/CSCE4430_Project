@@ -11,7 +11,7 @@
     <ContentPage.Content>
 
         <ContentPage.BindingContext>
-            <local:viewGraph/>
+            <chart:viewGraph/>
         </ContentPage.BindingContext>
 
         <chart:SfChart>
